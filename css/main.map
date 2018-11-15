@@ -3,26 +3,26 @@
 	"file": "../scss/main.css",
 	"sources": [
 		"../scss/main.scss",
-		"../scss/base/_base.scss",
+		"../scss/base/_variables.scss",
 		"../scss/base/_mixins.scss",
 		"../scss/base/_normalize.scss",
-		"../scss/base/_variables.scss",
-		"../scss/layouts/_header.scss",
+		"../scss/base/_base.scss",
 		"../scss/layouts/_nav.scss",
+		"../scss/layouts/_header.scss",
 		"../scss/layouts/_footer.scss",
+		"../scss/modules/_typography.scss",
 		"../scss/modules/_blocks.scss",
 		"../scss/modules/_buttons.scss",
-		"../scss/modules/_components.scss",
 		"../scss/modules/_sections.scss",
-		"../scss/modules/_typography.scss"
+		"../scss/modules/_components.scss"
 	],
 	"sourcesContent": [
-		"/*\r\n    Nimbus App\r\n    Author: Russel John Gonzales\r\n    Version: 0.0.1\r\n*/\r\n\r\n/* BASE - Base styles, variables, mixins, etc. */\r\n@import 'base/_base.scss';\r\n@import 'base/_mixins.scss';\r\n@import 'base/_normalize.scss';\r\n@import 'base/_variables.scss';\r\n\r\n/* LAYOUTS - Page layout styles */\r\n@import 'layouts/_header.scss';\r\n@import 'layouts/_nav.scss';\r\n@import 'layouts/_footer.scss';\r\n\r\n/* MODULES - Individual site components */\r\n@import 'modules/_blocks.scss';\r\n@import 'modules/_buttons.scss';\r\n@import 'modules/_components.scss';\r\n@import 'modules/_sections.scss';\r\n@import 'modules/_typography.scss';\r\n",
-		"",
-		"",
-		"",
-		"",
-		"",
+		"/*\r\n    Nimbus App\r\n    Author: Russel John Gonzales\r\n    Version: 0.0.1\r\n*/\r\n\r\n/* BASE - Base styles, variables, mixins, etc. */\r\n@import 'base/_variables.scss';\r\n@import 'base/_mixins.scss';\r\n@import 'base/_normalize.scss';\r\n@import 'base/_base.scss';\r\n\r\n/* LAYOUTS - Page layout styles */\r\n@import 'layouts/_nav.scss';\r\n@import 'layouts/_header.scss';\r\n@import 'layouts/_footer.scss';\r\n\r\n/* MODULES - Individual site components */\r\n@import 'modules/_typography.scss';\r\n@import 'modules/_blocks.scss';\r\n@import 'modules/_buttons.scss';\r\n@import 'modules/_sections.scss';\r\n@import 'modules/_components.scss';\r\n",
+		"/* Font Color */\r\n$base-font-size: 15px;\r\n$base-font-family: \"Segoe UI\", \"Segoe WP\", \"Segoe Regular\", sans-serif;\r\n$base-font-color: #666666;\r\n\r\n/* Background Colors */\r\n$primary-color: #F06529;\r\n$secondary-color: #E34C26;\r\n$light-color: #e7e7e7;\r\n$dark-color: #333333;",
+		"\r\n/* Mixins */\r\n\r\n@mixin border-radius($radius) {\r\n    -webkit-border-radius: $radius;\r\n    -moz-border-radius: $radius;\r\n    -ms-border-radius: $radius;\r\n    -o-border-radius: $radius;\r\n    border-radius: $radius;\r\n}\r\n\r\n@mixin add-border($size, $color, $position) {\r\n    @if $position == 'all' {\r\n        border: $size solid $color;\r\n    } @else if $position == 'top' {\r\n        border-top: $size solid $color;\r\n    } @else if $position == 'bottom' {\r\n        border-bottom: $size solid $color;\r\n    } @else if $position == 'right' {\r\n        border-right: $size solid $color;\r\n    } @else if $position == 'left' {\r\n        border-left: $size solid $color;\r\n    } @else if $position == 'top-bottom' {\r\n        border-left: $size solid $color;\r\n        border-bottom: $size solid $color;\r\n    } @else if $position == 'right-left' {\r\n        border-right: $size solid $color;\r\n        border-left: $size solid $color;\r\n    }\r\n}",
+		"h1, h2, h3, h4, h5, h6 {\r\n    margin-top: 0;\r\n}\r\n\r\n.page-header {\r\n    margin-top: 30px;\r\n}",
+		"body {\r\n    font-family: $base-font-family;\r\n    font-size: $base-font-size;\r\n    line-height: 1.7em;\r\n    color: $base-font-color;\r\n}\r\n\r\na {\r\n    color: $primary-color;\r\n}\r\n\r\nul,li {\r\n    list-style: none;\r\n}\r\n\r\ninput, textarea, button {\r\n    @include border-radius(0px);\r\n}",
+		"/* Navbar */\r\n\r\n.navbar {\r\n    width: 100%;\r\n    @include add-border(1px, $light-color, 'right-left');\r\n    min-height: 60px;\r\n    background: $light-color;\r\n    margin-bottom: 30px;\r\n\r\n    a {\r\n        color: $primary-color !important;\r\n        font-size: 20px;\r\n        letter-spacing: -0.5px;\r\n        padding-bottom: 24px !important;\r\n        padding-top: 20px !important;\r\n    }\r\n\r\n    a:hover {\r\n        background: $primary-color;\r\n        color: #fff;\r\n    }\r\n}",
 		"",
 		"",
 		"",
@@ -31,6 +31,6 @@
 		"",
 		""
 	],
-	"mappings": "AAAA;;;;EAIE;AAEF,iDAAiD;AAMjD,kCAAkC;AAKlC,0CAA0C",
+	"mappings": "AAAA;;;;EAIE;AAEF,iDAAiD;ACNjD,gBAAgB;AAKhB,uBAAuB;ACJvB,YAAY;;ACDZ,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,CAAC;EACnB,UAAU,EAAE,CAAE;CACjB;;;AAED,AAAA,YAAY,CAAC;EACT,UAAU,EAAE,IAAK;CACpB;;;ACND,AAAA,IAAI,CAAC;EACD,WAAW,EHCI,UAAU,EAAE,UAAU,EAAE,eAAe,EAAE,UAAU;EGAlE,SAAS,EHDI,IAAI;EGEjB,WAAW,EAAE,KAAM;EACnB,KAAK,EHDS,OAAO;CGExB;;;AAED,AAAA,CAAC,CAAC;EACE,KAAK,EHFO,OAAO;CGGtB;;;AAED,AAAA,EAAE,EAAC,AAAA,EAAE,CAAC;EACF,UAAU,EAAE,IAAK;CACpB;;;AAED,AAAA,KAAK,EAAE,AAAA,QAAQ,EAAE,AAAA,MAAM,CAAC;EFXpB,qBAAqB,EEYE,GAAG;EFX1B,kBAAkB,EEWK,GAAG;EFV1B,iBAAiB,EEUM,GAAG;EFT1B,gBAAgB,EESO,GAAG;EFR1B,aAAa,EEQU,GAAG;CAC7B;;AJLD,kCAAkC;AKZlC,YAAY;;AAEZ,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,IAAK;EHuBR,YAAY,EGtBI,GAAG,CHsBC,KAAK,CDlBnB,OAAO;ECmBb,WAAW,EGvBK,GAAG,CHuBA,KAAK,CDnBlB,OAAO;EIHjB,UAAU,EAAE,IAAK;EACjB,UAAU,EJEA,OAAO;EIDjB,aAAa,EAAE,IAAK;CAcvB;;;AAnBD,AAOI,OAPG,CAOH,CAAC,CAAC;EACE,KAAK,EJJG,OAAO,CIIO,UAAU;EAChC,SAAS,EAAE,IAAK;EAChB,cAAc,EAAE,MAAO;EACvB,cAAc,EAAE,eAAgB;EAChC,WAAW,EAAE,eAAgB;CAChC;;;AAbL,AAeK,OAfE,CAeH,CAAC,AAAA,MAAM,CAAC;EACJ,UAAU,EJZF,OAAO;EIaf,KAAK,EAAE,IAAK;CACf;;ALHL,0CAA0C",
 	"names": []
 }

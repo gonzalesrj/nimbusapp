@@ -4,7 +4,73 @@
     Version: 0.0.1
 */
 /* BASE - Base styles, variables, mixins, etc. */
+/* Font Color */
+/* Background Colors */
+/* Mixins */
+/* line 1, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* line 5, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
+/* line 1, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
+body {
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 8, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
+a {
+  color: #F06529;
+}
+
+/* line 12, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 16, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
+input, textarea, button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+
 /* LAYOUTS - Page layout styles */
+/* Navbar */
+/* line 3, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
+.navbar {
+  width: 100%;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  min-height: 60px;
+  background: #e7e7e7;
+  margin-bottom: 30px;
+}
+
+/* line 10, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
+.navbar a {
+  color: #F06529 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px !important;
+  padding-top: 20px !important;
+}
+
+/* line 18, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
+.navbar a:hover {
+  background: #F06529;
+  color: #fff;
+}
+
 /* MODULES - Individual site components */
 
 /*# sourceMappingURL=../css/main.map */
