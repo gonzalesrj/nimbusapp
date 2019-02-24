@@ -6,6 +6,7 @@
 /* BASE - Base styles, variables, mixins, etc. */
 /* Font Color */
 /* Background Colors */
+/* Showcase Area */
 /* Mixins */
 /* line 1, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -17,12 +18,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
 }
 
+/* line 9, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+.no-pad-top {
+  padding-top: 0;
+}
+
 /* line 1, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
 body {
   font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
   font-size: 15px;
   line-height: 1.7em;
-  color: #666666;
+  color: #000000;
 }
 
 /* line 8, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
@@ -42,6 +48,16 @@ input, textarea, button {
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
   border-radius: 0px;
+}
+
+/* line 20, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
+nav {
+  padding: 0 !important;
+}
+
+/* line 24, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
+img.device {
+  width: 100%;
 }
 
 /* LAYOUTS - Page layout styles */
@@ -67,10 +83,159 @@ input, textarea, button {
 
 /* line 18, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
 .navbar a:hover {
+  background: #F06529 !important;
+  color: #fff !important;
+}
+
+/* MODULES - Individual site components */
+/* lists */
+/* line 3, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list, .list-feature {
+  margin-bottom: 30px;
+}
+
+/* line 7, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-feature {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+/* line 13, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-feature li {
+  line-height: 2.2em;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 18, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-feature li:last-child {
+  border: 0;
+}
+
+/* Blocks */
+/* line 3, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 7, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 13, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block-primary {
   background: #F06529;
   color: #fff;
 }
 
-/* MODULES - Individual site components */
+/* line 19, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block-secondary {
+  background: #D9701A;
+  color: #fff;
+}
+
+/* line 25, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block-light {
+  background: #e7e7e7;
+  color: #000000;
+  color: #333;
+}
+
+/* line 31, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block-dark {
+  background: #333333;
+  color: #ffffff;
+  color: #333;
+}
+
+/* line 37, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block-center {
+  text-align: center !important;
+}
+
+/* Sections */
+/* line 2, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+section {
+  padding: 30px 0;
+}
+
+/* line 6, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-showcase {
+  height: 400px;
+  background: url("../img/showcase.jpg") no-repeat top center;
+}
+
+/* line 10, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-showcase .showcase-content {
+  padding: 110px 15px;
+  text-align: center;
+}
+
+/* line 15, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-showcase h1 {
+  color: #F06529;
+}
+
+/* line 20, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-primary {
+  background: #F06529;
+  color: #fff;
+}
+
+/* line 25, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-secondary {
+  background: #D9701A;
+  color: #fff;
+}
+
+/* line 30, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-light {
+  background: #e7e7e7;
+  color: #000000;
+  color: #333;
+}
+
+/* line 35, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
+.section-dark {
+  background: #333333;
+  color: #ffffff;
+  color: #333;
+}
+
+/* Searchbox */
+/* line 3, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_forms.scss */
+.search {
+  width: 100%;
+}
+
+/* line 6, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_forms.scss */
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 11, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_forms.scss */
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 50%;
+  border: 2px solid #F06529;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+/* line 21, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_forms.scss */
+.search button {
+  border: 2.5px solid #F06529;
+  background-color: #F06529;
+  color: #fff;
+  padding: 6px;
+  vertical-align: top;
+  margin-left: -4px;
+}
 
 /*# sourceMappingURL=../css/main.map */

@@ -16,3 +16,11 @@ ul,li {
 input, textarea, button {
     @include border-radius(0px);
 }
+
+nav {
+    padding: 0 !important;
+}
+
+img.device {
+    width: 100%;
+}

@@ -28,3 +28,13 @@
         border-left: $size solid $color;
     }
 }
+
+@mixin add-background($color) {
+    background: $color;
+
+    @if $color == $light-color {
+        color: #000000;
+    } @else if $color == $dark-color {
+        color: #ffffff;
+    }   
+}

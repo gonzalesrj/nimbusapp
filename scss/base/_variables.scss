@@ -1,10 +1,15 @@
 /* Font Color */
 $base-font-size: 15px;
 $base-font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
-$base-font-color: #666666;
+$base-font-color: #000000;
 
 /* Background Colors */
 $primary-color: #F06529;
-$secondary-color: #E34C26;
+$secondary-color: #D9701A;
 $light-color: #e7e7e7;
 $dark-color: #333333;
+
+/* Showcase Area */
+
+$showcase-height: 400px;
+$showcase-image: "../img/showcase.jpg";
