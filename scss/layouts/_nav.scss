@@ -4,7 +4,7 @@
     width: 100%;
     @include add-border(1px, $light-color, 'right-left');
     min-height: 60px;
-    background: $light-color;
+    background: #ffffff;
     margin-bottom: 30px;
 
     a {
