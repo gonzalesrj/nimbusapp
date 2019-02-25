@@ -11,11 +11,54 @@
     width: 80%;
 
     li {
-        line-height: 2.2em;
+        line-height: 3.5em;
         @include add-border(1px, #cccccc, bottom);
     }
 
     li:last-child {
         border: 0;
     }
+
+    span {
+        vertical-align: top;
+        padding-top: 9px;
+        font-size: 120%;
+    }
+
+    i {
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+}
+
+/* icons */
+
+.fa-primary {
+    color: $primary-color !important;
+}
+
+.fa-border {
+    @include add-border(1px, $primary-color, all);
+    @include border-radius(5px);
+    padding: 13px 15px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Headings */
+
+.heading-primary {
+    color: $primary-color;
+}
+
+.heading-secondary {
+    color: $secondary-color;
+}
+
+.heading-light {
+    color: $light-color;
+}
+
+.heading-dark {
+    color: $dark-color;
 }

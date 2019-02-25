@@ -4,11 +4,13 @@ section {
 }
 
 .section-showcase {
-    height: $showcase-height;
+    min-height: $showcase-height;
     background:url($showcase-image) no-repeat top center;
 
     .showcase-content {
-        padding: 110px 15px;
+        padding-top: 110px;
+        padding-right: 15px;
+        padding-left: 15px;
         text-align: center;
     }
 
