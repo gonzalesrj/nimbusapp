@@ -34,6 +34,27 @@ h1, h2, h3, h4, h5, h6 {
   padding: 90px 0 30px 0;
 }
 
+/* Image Sizes */
+/* line 25, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+.img-xsm {
+  width: 100px;
+}
+
+/* line 29, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+.img-sm {
+  width: 200px;
+}
+
+/* line 33, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+.img-lg {
+  width: 400px;
+}
+
+/* line 37, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_normalize.scss */
+.img-xlg {
+  width: 700px;
+}
+
 /* line 1, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/base/_base.scss */
 body {
   font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
@@ -85,13 +106,13 @@ img.device-small {
   border-right: 1px solid #e7e7e7;
   border-left: 1px solid #e7e7e7;
   min-height: 60px;
-  background: #ffffff;
+  background: #333333;
   margin-bottom: 30px;
 }
 
 /* line 10, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
 .navbar a {
-  color: #F06529 !important;
+  color: #ffffff !important;
   font-size: 20px;
   letter-spacing: -0.5px;
   padding-bottom: 24px !important;
@@ -104,12 +125,23 @@ img.device-small {
   color: #fff !important;
 }
 
+/* line 23, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
+.navbar .active > a {
+  color: #ffffff !important;
+  background: #F06529 !important;
+}
+
+/* line 28, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_nav.scss */
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 /* Footer */
 /* line 3, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_footer.scss */
 .footer-main {
   background: #333333;
   color: #ffffff;
-  border-top: 5px solid #D9701A;
+  border-top: 5px solid #F0C929;
   min-height: 200px;
   padding: 30px 0;
   z-index: 100;
@@ -130,6 +162,34 @@ img.device-small {
 .footer-main li {
   line-height: 1.8em;
   list-style: none;
+}
+
+/* Blog */
+/* line 3, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_blog.scss */
+.blog-post {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  padding: 15px;
+}
+
+/* line 8, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_blog.scss */
+.blog-post h2.page-header {
+  margin-top: 5px !important;
+}
+
+/* line 13, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_blog.scss */
+.blog-featured {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 18, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/layouts/_blog.scss */
+.post-meta {
+  background: #cccccc;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
 }
 
 /* MODULES - Individual site components */
@@ -170,13 +230,50 @@ img.device-small {
   margin-right: 5px;
 }
 
+/* line 34, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-comments {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 39, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-comments li {
+  padding: 10px 0 5px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 44, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-comments li:last-child {
+  border: 0;
+}
+
+/* line 48, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.list-comments img {
+  width: 100px;
+}
+
 /* icons */
-/* line 36, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 54, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .fa-primary {
   color: #F06529 !important;
 }
 
-/* line 40, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 58, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.fa-secondary {
+  color: #F0C929 !important;
+}
+
+/* line 62, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.fa-light {
+  color: #e7e7e7 !important;
+}
+
+/* line 66, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+.fa-dark {
+  color: #333333 !important;
+}
+
+/* line 70, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .fa-border {
   border: 1px solid #F06529;
   -webkit-border-radius: 5px;
@@ -190,63 +287,63 @@ img.device-small {
 }
 
 /* Headings */
-/* line 50, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 80, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-primary, .heading-primary-a {
   color: #F06529;
 }
 
-/* line 54, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 84, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-primary-a {
   border-bottom: 2px solid #F06529;
 }
 
-/* line 59, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 89, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-secondary, .heading-secondary-a {
-  color: #D9701A;
+  color: #F0C929;
 }
 
-/* line 63, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 93, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-secondary-a {
-  border-bottom: 2px solid #D9701A;
+  border-bottom: 2px solid #F0C929;
 }
 
-/* line 68, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 98, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-light, .heading-light-a {
   color: #e7e7e7;
 }
 
-/* line 72, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 102, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-light-a {
   border-bottom: 2px solid #e7e7e7;
 }
 
-/* line 77, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 107, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-dark, .heading-dark-a {
   color: #333333;
 }
 
-/* line 81, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 111, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .heading-dark-a {
   border-bottom: 2px solid #333333;
 }
 
 /* Emphasis Text */
-/* line 88, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 118, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .em-primary {
   color: #F06529;
 }
 
-/* line 92, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 122, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .em-secondary {
-  color: #D9701A;
+  color: #F0C929;
 }
 
-/* line 96, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 126, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .em-light {
   color: #e7e7e7;
 }
 
-/* line 100, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
+/* line 130, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_typography.scss */
 .em-dark {
   color: #333333;
 }
@@ -264,48 +361,53 @@ img.device-small {
   padding-top: 0;
 }
 
-/* line 13, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 12, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+.block iframe, .block-primary iframe, .block-secondary iframe, .block-light iframe, .block-dark iframe {
+  width: 100%;
+}
+
+/* line 17, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-primary {
   background: #F06529;
   color: #fff;
 }
 
-/* line 19, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 23, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-secondary {
-  background: #D9701A;
+  background: #F0C929;
   color: #fff;
 }
 
-/* line 25, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 29, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-light {
   background: #e7e7e7;
   color: #000000;
   color: #333;
 }
 
-/* line 31, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 35, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-dark {
   background: #333333;
   color: #ffffff;
   color: #333;
 }
 
-/* line 37, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 41, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-center {
   text-align: center !important;
 }
 
-/* line 41, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 45, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-image img {
   width: 100%;
 }
 
-/* line 45, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 49, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-border {
   border: 1px solid #cccccc;
 }
 
-/* line 50, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 54, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-primary-head h3 {
   padding: 15px 5px 15px 10px;
   background: #F06529;
@@ -313,26 +415,26 @@ img.device-small {
   font-size: 18px;
 }
 
-/* line 57, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 61, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-primary-head .block-content {
   border: 1px solid #F06529;
   padding: 10px;
 }
 
-/* line 64, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 68, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-icon h3 {
   padding: 0;
   margin: 0;
 }
 
-/* line 69, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 73, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-icon .icon {
   float: left;
   width: 20%;
   margin-top: 10px;
 }
 
-/* line 75, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
+/* line 79, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_blocks.scss */
 .block-icon .icon-content {
   float: left;
   width: 70%;
@@ -384,17 +486,17 @@ section {
 
 /* line 27, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
 .section-primary-a {
-  border-top: 4px solid #D9701A;
+  border-top: 4px solid #F0C929;
 }
 
 /* line 32, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
 .section-primary-b {
-  border-bottom: 4px solid #D9701A;
+  border-bottom: 4px solid #F0C929;
 }
 
 /* line 38, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_sections.scss */
 .section-secondary {
-  background: #D9701A;
+  background: #F0C929;
   color: #fff;
 }
 
@@ -437,8 +539,28 @@ section {
 }
 
 /* line 20, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_components.scss */
-.tab-primary .tab-pane, .tab-primary .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.tab-primary .tab-pane, .tab-primary .nav-tabs a .nav-item.show .nav-link, .tab-primary .nav-tabs .nav-link.active {
   background: #F06529;
+  color: #ffffff;
+}
+
+/* line 25, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_components.scss */
+.tab-secondary .tab-pane, .tab-secondary .nav-tabs a .nav-item.show .nav-link, .tab-secondary .nav-tabs .nav-link.active {
+  background: #F0C929;
+  color: #ffffff;
+}
+
+/* line 30, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_components.scss */
+.tab-light .tab-pane, .tab-light .nav-tabs a .nav-item.show .nav-link, .tab-light .nav-tabs .nav-link.active {
+  background: #e7e7e7;
+  color: #000000;
+  color: #333333;
+}
+
+/* line 35, D:/Russel John Gonzales/Documents/myProjects/nimbusapp/scss/modules/_components.scss */
+.tab-dark .tab-pane, .tab-dark .nav-tabs a .nav-item.show .nav-link, .tab-dark .nav-tabs .nav-link.active {
+  background: #333333;
+  color: #ffffff;
   color: #ffffff;
 }
 

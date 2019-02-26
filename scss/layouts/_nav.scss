@@ -4,11 +4,11 @@
     width: 100%;
     @include add-border(1px, $light-color, 'right-left');
     min-height: 60px;
-    background: #ffffff;
+    background: $dark-color;
     margin-bottom: 30px;
 
     a {
-        color: $primary-color !important;
+        color: #ffffff !important;
         font-size: 20px;
         letter-spacing: -0.5px;
         padding-bottom: 24px !important;
@@ -18,5 +18,14 @@
     a:hover {
         background: $primary-color !important;
         color: #fff !important;
+    }
+
+    .active > a  {
+        color: #ffffff !important;
+        background: $primary-color !important;  
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
 }
